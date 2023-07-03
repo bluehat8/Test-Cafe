@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cafetería</title>
+</head>
+<body>
+    <header class="header header-contacto">
+        <section class="header__contenido contenedor">
+            <nav class="navegacion">
+                <div class="navegacion__logo">
+                    <img class="navegacion__logo--img" src="img/logo.svg" alt="imagen logo">
+                </div>
+
+                <div class="navegacion__sections">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="proceso.html">Proceso</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="galeria.html">Galería</a>
+                    <a class="activo" href="#">Contacto</a>
+                </div>
+            </nav>
+
+            <div class="navegacion__heading">
+                <h1 class="navegacion__heading--h1">Mejores granos, mejor café</h1>
+            </div>
+        </section>
+    </header>
+
+    <main class="contacto contenedor">
+        <p class="contacto__text">Reserva tu</p>
+        <h1 class="contacto__heading">Mesa</h1>
+        <img class="contacto__img" src="img/cafe.svg" alt="imagen cafe">
+
+        <section class="form">
+            <form action="" id="formulario">
+                <section class="formulario__nombre">
+                    <label for="nombre" class="formulario__nombre--label">Nombre:</label>
+                    <input id="nombre" type="text" placeholder="Escribe tu nombre" name="nombre" required>
+                </section>
+    
+                <section class="formulario__telefono">
+                    <label for="telefono" class="formulario__telefono--label">Teléfono:</label>
+                    <input id="telefono" type="tel" name="telefono" required>
+                </section>
+    
+                <section class="formulario__persons">
+                    <label for="persons" class="formulario__persons--label">Número de personas:</label>
+                    <select name="persons" id="persons" name="persons" required>
+                        <option value="select" disabled selected>--- Seleccione ---</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="más">+5</option>
+                    </select>
+                </section>
+    
+                <section class="formulario__hora">
+                    <label for="hora" class="formulario__hora--label">Hora:</label>
+                    <input type="time" id="hora" name="hora">
+                </section>
+    
+                <section class="formulario__fecha">
+                    <label for="fecha" class="formulario__fecha--label">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </section>
+    
+                <input type="submit">
+            </form>
+
+            <div class="img">
+                <img class="img__imagen" src="img/granos_cafe.avif" alt="">
+            </div>
+        </section>
+
+        <h1 class="heading">Administra tus Reservas</h1>
+        <section class="reservas">
+            
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <section class="contenido contenedor">
+            <div class="contenido__ubicacion">
+                <h3 class="contenido__ubicacion--heading">Ubicación</h3>
+                <p class="contenido__ubicacion--text">Xxxxxxx Xxxxxxx 5990</p>
+                <p class="contenido__ubicacion--a">Managua</p>
+            </div>
+
+            <div class="contenido__reservacion">
+                <h3 class="contenido__reservacion--heading">Reservación</h3>
+                <p class="contenido__reservacion--text">Tel. 76445412</p>
+                <a class="contenido__reservacion--a" href="tel:+76445412">Llamar</a>
+            </div>
+
+            <div class="contenido__horario">
+                <h3 class="contenido___horario--heading">Horario</h3>
+                <p class="contenido__horario--text">Lun-Dom: 10:00 - 22:00</p>
+            </div>
+        </section>
+
+        <p class="copyright">Todos los derechos reservados. La Cafetería</p>
+    </footer>
+
+    <script src="js/contacto.js"></script>
+    <script src="js/time.js"></script>
+</body>
+</html>

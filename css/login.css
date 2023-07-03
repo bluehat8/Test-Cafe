@@ -1,0 +1,32 @@
+:root{
+    --fuentePrincipal: 'Raleway', sans-serif;
+    --fuenteSecundaria: 'Roboto', sans-serif;
+
+    --primario: #5E311E;
+    --secundario: #C39C63;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --grisClaro: #eceeef;
+    --cafeClaro: #ebe7de;
+}
+
+/*Utilidades*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteSecundaria);
+    font-size: 1.6rem;
+    background-image: url('../img/fondoLogin.avif');
+}
+.error{
+    padding: 1rem;
+    background-color: #ff7119;
+    font-size: 1.6rem;
+    display: block;
+    border: 1px solid var(--negro);
+}
